@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conway's Music Box</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles/default-styles.css">
+  <script src="https://kit.fontawesome.com/996fecb11f.js" crossorigin="anonymous"></script>
+  <script src="src/community.js" type="module"></script>
+</head>
+<body>
+  <nav class="navbar has-shadow is-white">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="home.html">
+            <i class="fa-solid fa-music"></i>
+          </a>
+      <a class="navbar-burger" id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+    </div>
+
+    <div class="navbar-start">
+      <a class="navbar-item is-hoverable" href="home.html">
+        Home
+      </a>
+    
+      <a class="navbar-item is-hoverable" href="app.html">
+        App
+      </a>
+
+      <a class="navbar-item is-hoverable" href="favorites.html">
+        Favorites
+      </a>
+    
+      <a class="navbar-item has-background-light" href="community.html">
+        Community
+      </a>
+    
+      <a class="navbar-item is-hoverable" href="documentation.html">
+        Documentation
+      </a>
+    </div> <!-- end navbar-start -->
+  </nav>
+
+
+  <div class="columns is-vcentered has-background-light">
+    <div class="column pt-5">  
+      <div class="hero is-large p-2">
+        <div class="hero-head">
+          <p class="title">
+            Community Favorites
+          </p>
+          <button class="button has-background-grey has-text-white" id="clear-button">Clear Favorites</button>
+          <div class="has-background-grey" id="community">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <mc-footer data-title="Movie Chooser"></mc-footer>
+</body>
+</html>

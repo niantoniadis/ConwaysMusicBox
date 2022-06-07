@@ -1,0 +1,95 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conway's Music Box</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles/default-styles.css">
+  <script src="https://kit.fontawesome.com/996fecb11f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <nav class="navbar has-shadow is-white">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="home.html">
+        <i class="fa-solid fa-music"></i>
+      </a>
+      <a class="navbar-burger" id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+    </div>
+
+    <div class="navbar-start">
+      <a class="navbar-item is-hoverable" href="home.html">
+        Home
+      </a>
+    
+      <a class="navbar-item is-hoverable" href="app.html">
+        App
+      </a>
+    
+      <a class="navbar-item is-hoverable" href="favorites.html">
+        Favorites
+      </a>
+      
+      <a class="navbar-item is-hoverable" href="community.html">
+        Community
+      </a>
+    
+      <a class="navbar-item has-background-light" href="documentation.html">
+        Documentation
+      </a>
+    </div> <!-- end navbar-start -->
+  </nav>
+
+
+  <div class="columns has-background-light has-text-centered">
+    <div class="column is-size-5"></div>
+    <div class="column is-two-thirds">  
+      <div class="hero is-large p-2">
+        <div class="hero-head">
+          <p class="title my-6">
+            Documentation
+          <h1>Proposal</h1>
+            <ul>
+                <li>Musical melodies generated through cellular automata.</li>
+                <li>See what kind of melodies you can generate!</li>
+                <li>Tweak the melody by clicking notes to toggle them on/off!</li>
+                <li>View other people's creations and share your own!</li>
+                
+            </ul>
+          </p>
+          <br><br>
+          <h1>Issues</h1>
+          <p>The part of this project that took the longest was probably figuring out how to use the web audio API to shift the pitch
+              of an audio clip, and how to ensure that all pitches are within the same musical key. I happened to find a really useful formula that converts
+              frequencies to musical notes, so that saved me a lot of time on this part. Another challenge was setting up the firebase project, since I failed to
+              add it to my first project, it took a little more time to remember how it was done in the homeworks.
+          </p>
+          <br><br>
+          <h1>Resources Utilized</h1>
+          <p class="pr-2 mt-2">Pitch shifting with web audio: <br><a href="https://zpl.fi/pitch-shifting-in-web-audio-api/">https://zpl.fi/pitch-shifting-in-web-audio-api/</a><br></p>
+          <p class="pr-2">Canvas clicked mouse info help: <br><a href="https://stackoverflow.com/questions/55677/how-do-i-get-the-coordinates-of-a-mouse-click-on-a-canvas-element">https://stackoverflow.com/questions/55677/how-do-i-get-the-coordinates-of-a-mouse-click-on-a-canvas-element</a></p>       
+          <p class="pr-2">Firebase refresher: <br><a href="https://firebase.google.com/docs/database/web/read-and-write">https://firebase.google.com/docs/database/web/read-and-write</a></p>
+          <br><br>
+          <h1>Demo</h1>
+          <p class="pr-2 mt-2"><a href="https://www.loom.com/share/af4bca8e6afe4b0bb95b58f1a1668dac">https://www.loom.com/share/af4bca8e6afe4b0bb95b58f1a1668dac</a></p>
+          <br><br>
+          <h1>APIs Used</h1>
+          <p class="pr-2 mt-2">Used firebase to store info across clients</p>
+          <p class="pr-2 mt-2">Web audio API basics</p>
+
+        </div>
+        <div class="mt-6 hero-footer">Contact: naa3207@rit.edu</div>
+    </div>
+    </div>
+    <div class="column is-size-5"></div>
+  </div>
+</body>
+</html>

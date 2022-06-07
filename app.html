@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Conway's Music Box</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="styles/default-styles.css">
+	<title>Conway's Music Box</title>
+  <script src="https://kit.fontawesome.com/996fecb11f.js" crossorigin="anonymous"></script>
+	<script src="./src/loader.js" type="module"></script>
+</head>
+<body>
+    <nav class="navbar has-shadow is-white has-text-centered">
+        <div class="navbar-brand has-text-centered">
+          <a class="navbar-item" href="home.html">
+            <i class="fa-solid fa-music"></i>
+          </a>
+          <a class="navbar-burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+        </div>
+    
+        <div class="navbar-start has-text-centered">
+          <a class="navbar-item is-hoverable" href="home.html">
+            Home
+          </a>
+        
+          <a class="navbar-item has-background-light" href="app.html">
+            App
+          </a>
+        
+          <a class="navbar-item is-hoverable" href="favorites.html">
+            Favorites
+          </a>
+
+          <a class="navbar-item is-hoverable" href="community.html">
+            Community
+          </a>
+        
+          <a class="navbar-item is-hoverable" href="documentation.html">
+            Documentation
+          </a>
+        </div> <!-- end navbar-start -->
+      </nav>
+
+  <div class="column is-flex-direction-column has-text-centered has-background-light">
+      <h1 class="is-size-2 pb-3 pt-1">Conway's Music Box</h1>
+	  <canvas width="600" height="600"></canvas>
+	
+      <div id="controls" class="pt-3">
+        
+		    <section class="pb-3">
+			    <button class="button" id="stepButton">Step</button>
+			    <button class="button" id="replayButton">Replay Generation</button>
+          <button class="button" id="resetButton">Restart</button>
+          <button class="button" id="clearButton">Clear</button>
+		    </section>
+        <section class="pb-3">
+          <button class="button has-text-white" id="saveButton">Save Original</button>
+          <button class="button has-text-white" id="saveCurrButton">Save Current</button>
+          <button class="button has-text-white" id="uploadButton">Upload</button>
+        </section>
+
+        <section class="pb-3">
+          <span class="pr-4"><label for="autoCB">Auto: </label><input type="checkbox" id="autoCB"></span>
+          <label>Sound: 
+            <select id="soundSelect">
+              <option id="kalimbaOp" value="media/DKalimba.wav" selected>Kalimba</option>
+              <option id="sineWave" value="media/sinewave.wav" selected>Sine Wave</option>
+              <option id="synthTone" value="media/synthTone.wav" selected>Trumpet Synth</option>
+            </select>
+          </label>
+        </section>
+
+		    <section class="pb-3">
+			    Volume: <input type="range" id="volumeSlider" min="0" max="2" value="1" step="0.01">
+			    <span id="volumeLabel">???</span>
+		    </section>
+
+		    <section>
+          
+        </section>
+        
+          <!--<span><input type="checkbox" id="gradientCB"><label for="gradientCB">Show Gradient</label></span>
+          <span><input type="checkbox" id="barsCB"><label for="barsCB">Show Bars</label></span>
+          <span><input type="checkbox" id="circlesCB"><label for="circlesCB">Show Circles</label></span>
+           we'll use this 4th checkbox soon!
+          <span><input type="checkbox" id="noiseCB"><label for="noiseCB">Show Noise</label></span>
+          <span><input type="checkbox" id="invertCB"><label for="invertCB">Invert Colors</label></span>
+          <span><input type="checkbox" id="embossCB"><label for="embossCB">Show Emboss</label></span>-->
+        </section>
+	</div>
+</div>
+</body>
+</html>
